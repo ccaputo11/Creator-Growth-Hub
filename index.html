@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator Growth Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Creator Growth Hub</h1>
+        <p>Research. Connect. Grow.</p>
+    </header>
+
+    <main>
+
+        <section class="dashboard">
+            <div class="stat">
+                <h2 id="total">0</h2>
+                <p>Total Creators</p>
+            </div>
+
+            <div class="stat">
+                <h2 id="contacted">0</h2>
+                <p>Contacted</p>
+            </div>
+
+            <div class="stat">
+                <h2 id="booked">0</h2>
+                <p>Calls Booked</p>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Add a Creator</h2>
+
+            <input type="text" id="creatorName" 
+                placeholder="Creator name">
+
+            <select id="niche">
+                <option>Beauty</option>
+                <option>Wellness</option>
+                <option>Fitness</option>
+                <option>Lifestyle</option>
+                <option>Business</option>
+                <option>Other</option>
+            </select>
+
+            <button id="addCreator">Add Creator</button>
+        </section>
+
+        <section class="panel">
+            <h2>Creator Qualification</h2>
+
+            <label>
+                <input type="checkbox" id="consistent">
+                Posts consistently
+            </label>
+
+            <label>
+                <input type="checkbox" id="audience">
+                Audience asks how to work with them
+            </label>
+
+            <label>
+                <input type="checkbox" id="link">
+                Weak or missing link in bio
+            </label>
+
+            <button id="checkScore">Check Qualification</button>
+            <p id="score">Qualification Score: 0/3</p>
+        </section>
+
+        <section class="panel">
+            <h2>My Creator Pipeline</h2>
+            <div id="creatorList"></div>
+        </section>
+
+        <section class="panel">
+            <h2>Daily Growth Tip</h2>
+            <p id="growthTip">Ready to grow?</p>
+            <button id="loadTip">Get a Growth Tip</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created by Christina Caputo</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
